@@ -1,0 +1,97 @@
+<html>
+<header>
+	<link rel="stylesheet" type="text/css" href="../index_style.css">
+	<style>
+		body {
+		margin: 0;
+		padding: 0;
+		font-family: Arial, sans-serif;
+		}
+	
+		.zermatt {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		height: 100vh;
+		}
+	
+		.clickable-image {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		}
+	
+		.clickable-image span {
+		margin-top: 5px;
+		font-size: 14px;
+		color: #555;
+		}
+	
+		img {
+		max-width: 70%;
+		max-height: 70%;
+		}
+	
+		a:hover {
+		font-weight: 900;
+		text-decoration: none;
+		color: #007bff;
+		transform: scale(1.05);
+    	opacity: 0.8;
+		}
+
+	
+	</style>
+</header>
+
+
+<body style="background-color: #FDFAEE;">
+	<section>
+		<ul class="task_bar">
+			<li class ="dropDown">
+				<a href="#" class="dropButton">View More</a>
+				<ul class="dropDownContent">
+					<li class="list1"><a id="list1" href="../index.html">Home Page</a></li>
+					<li class ="list2"><a id="list2" href="../favorite_thing/favorite_thing_index.html">My favorite things</a></li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<div class="zermatt">
+		<div class="top-left" style="grid-column: 1; grid-row: 1; padding: 20px;">
+			<h1>Zermatt - Switzerland</h1>
+			<p>Zermatt is a famous Matterhorn peak in Switzerland.<br/> The car-free community, whose cozily chalets line winding alleys, is surrounded by an aura of the Alps.<br/> The area attracts nature lovers and thrill seekers all year round with its excellent skiing and mountaineering.</p>
+			<p>Reason why I like this place:<br/>
+				This is a non-car town, and a gorgeous place being close to natural<br/>
+				We can go skiing all year long<br/>
+				Beautiful countryside</p>
+			<p>Read more: <a href="https://www.britannica.com/place/Zermatt">Zermatt</a></p>
+		</div>
+			<div class="top-right" style="grid-column: 2; grid-row: 1; text-align: center; margin-top: 60px;">
+			<img src="../images/zermatt-switzerland.jpg" alt="Image 1">
+			</div>
+		<div class="bottom-left" style="grid-column: 1; grid-row: 2; text-align: center;">
+		  <img src="../images/zermatt-switzerland-2.jpg" alt="Image 2">
+		</div>
+		<div class="bottom-right" style="grid-column: 2; grid-row: 2; text-align: center;">
+			<a href="https://www.zermatt.ch/en/Zermatt" class="clickable-image">
+			  <img src="../images/zermatt-switzerland-3.jpg" alt="Clickable Image">
+			  <span style="font-weight: 800;">Click me!</span>
+			</a>
+		</div>
+		  
+	  </div>
+</body>
+<!-- <div>
+<frameset rows="10%, *">
+	<frame src="placeHeading.html" frameborder="1" name="top" />
+
+	<frameset cols="20%, *">
+		<frame src="place_left.html" frameborder="1" name="left" />
+		<frame src="place_main_page.html" frame border="1" name="content_frame" />
+	</frameset>
+</frameset>
+</div> -->
+	
+</html>

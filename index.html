@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index_style.css">
+        
+        <style>
+            body {
+                background-image: url('./images/background.jpg');
+                background-size: 44%;
+                background-repeat: no-repeat;
+                background-position-x: right;
+            }
+            #developer {
+            position: absolute;
+            left:30%;
+            margin-top: 19%;
+            font-size: 540%;
+            }
+
+            .task_bar {
+            list-style: none;
+            padding: 10px;
+            position: absolute;
+            right: 60px;
+            background: #59918A;
+            padding: 7px;
+            font-weight: 900;
+            border-radius: 10%;
+            }
+            .task_bar li {
+            display: inline-block; position: relative;
+            }
+            .task_bar li a {
+            display: block;
+            padding: 20px 25 px;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+            }
+
+            .task_bar li ul.dropDownConTent li {display: block;}
+            .task_bar li ul.dropDownContent {
+            width: 100%;
+            background: #6598C3;
+            position: absolute;
+            z-index: 999;
+            display: none;
+            
+            }
+            .task_bar li a:hover {background: #bfe5d9; -webkit-text-stroke: 1px #000;}
+            .task_bar li:hover ul.dropDownContent {display: block;}
+
+            section, label {
+                font-family: 'Arial', sans-serif;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <ul class="task_bar">
+                <li class ="dropDown">
+                    <a href="#" class="dropButton">View More</a>
+                    <ul class="dropDownContent">
+                        <li class="list1"><a id="list1" href="Favorite_place/favoritePlace.html">My Favorite Place</a></li>
+                        <li class ="list2"><a id="list2" href="favorite_thing/favorite_thing_index.html">My Favorite Thing</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </header>
+
+
+        <div class="background-column" style="width: 30%; min-height: 100vh; background-color: #FFEFE8; z-index: -1;">
+            <div class="content" style="text-align: left; position: absolute; left: 10px;">
+                <h1 id="name">Kieu Do</h1>
+                <h1>Student number: 14475230</h1>
+                <h3>Welcome to my website</h3>
+
+
+                <div class = "introduction">
+                    <p><span class = "text">Hi everyone, welcome to my website, I am an IT student, <br/> my key goal is to be a software developer.<br/>
+                        Besides, I have some hobbies such as sports and travel. <br/> So let me find out more about my self in this website</span></p>
+                        <p>Contact me via <a href="mailto:Kieu.T.Do@uts.student.edu.au"> Email</a></p>
+                    <p>Thanks</p>
+                </div>
+        
+                <div class="information">
+                    <div class="toggle-container" style="text-align: right">
+                        <input type="checkbox" id="educationToggle" class="toggle-checkbox1">
+                        <label for="educationToggle" class="education-button">Show My Education</label>
+        
+                        <div class="education-content" style="font-weight:600; font-style: italic">
+                            UTS college
+                        </div>
+                    </div>
+                    <div class="toggle-container">
+                        <input type="checkbox" id="nationalityToggle" class="toggle-checkbox2">
+                        <label for="nationalityToggle" class="nationality-button">Show my Nationality</label>
+        
+                        <div class="nationality-content" style="font-weight: 600; font-style: italic">
+                            Vietnam
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1 id="developer" align="center">Computer<br/> Science<br/>Student</h1>
+        </div>
+    </body>
+    <footer style="text-align: center;">
+        <section>
+            <a href="https://github.com/baodo2402">Github</a>
+        </section>
+        <section>
+            <a href="https://www.linkedin.com/in/bao-do-237644262/">Linkedin</a>
+        </section>
+        <section>
+            <a href="mailto:thienbao1084@gmail.com">Email</a>
+        </section>
+    </footer>
+</html>

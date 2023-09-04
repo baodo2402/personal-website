@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../index_style.css">
+        <style>
+            body {
+                background-image: url('../images/guitar.jpg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position-x: right;
+                padding: 10px;
+                margin: 20px;
+            }
+            h1, p {
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: 800;
+            }
+            .thing-explanation{
+            transition: font-size 0.3s ease, background-color 0.5s ease;
+            width: 40%;
+            }
+            .thing-explanation:hover {
+                font-size: 18px;
+                color: #ffffff;
+                background-color: #59918A;
+            }
+            
+            a {
+                color: blue;
+                transition: font-size 0.3 ease;
+            }
+            a:hover {
+                font-size: 20px;
+                color:red;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <section>
+            <ul class="task_bar">
+                <li class ="dropDown">
+                    <a href="#" class="dropButton">View More</a>
+                    <ul class="dropDownContent">
+                        <li class="list1"><a id="list1" href="../index.html">Home Page</a></li>
+                        <li class ="list2"><a id="list2" href="../Favorite_place/favoritePlace.html">My Favorite Place</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+
+
+        
+            <div class="thing-explanation">
+                <h1>Guitar is My Favorite Thing</h1>
+                <p>Reasons why I love guitar</p>
+                <p>Guitar strings translate emotions into sound, making it<br/>
+                    a conduit for creativity and self-expression. The tactile<br/>
+                    experience of strumming and fretting empowers individuals<br/>
+                    to connect deeply with music, while its melodic and rhythmic potential offers endless avenues for personal exploration.</p>
+                <p>Read More: <a href="https://www.britannica.com/art/guitar">Link</a></p>
+            </div>
+
+            <div class="video">
+                <video width="640" height="360" controls>
+                    <source src="../images/Made You Look - Meghan Trainor - Guitar Solo (cover).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        
+    </body>
+</html>

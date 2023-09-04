@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    background-color: #FDFAEE;
+  
+  }
+
+  p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  #name {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    color: darkgoldenrod;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+  }
+
+  
+  #name::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: darkgoldenrod;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+h1 {
+  font: size 65px;
+  font-weight: 900;
+  color: darkgoldenrod;
+
+}
+.text {
+  background-color:beige;
+
+}
+
+
+a {
+  color: blue;
+  transition: font-size 0.3 ease;
+}
+a:hover {
+  font-size: 20px;
+  color:red;
+}
+
+.toggle-checkbox1, .toggle-checkbox2 {
+  display: none;
+}
+
+.education-button, .nationality-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #59918A;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.9 ease, font-weight 0.9 ease;
+
+}
+.education-button:hover, .nationality-button:hover {
+  background-color: burlywood;
+  font-weight: 900;
+}
+.education-content, .nationality-content {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.toggle-checkbox1:checked ~ .education-content, .toggle-checkbox2:checked ~ .nationality-content {
+  display: block;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.toggle-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.task_bar {
+  list-style: none;
+  padding: 10px;
+  position: absolute;
+  right: 60px;
+  background: #59918A;
+  padding: 7px;
+  font-weight: 900;
+  border-radius: 10%;
+  }
+  .task_bar li {
+  display: inline-block; position: relative;
+  }
+  .task_bar li a {
+  display: block;
+  padding: 20px 25 px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  }
+
+  .task_bar li ul.dropDownConTent li {display: block;}
+  .task_bar li ul.dropDownContent {
+  width: 100%;
+  background: #6598C3;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  
+  }
+  .task_bar li a:hover {background: #bfe5d9; -webkit-text-stroke: 1px #000;}
+  .task_bar li:hover ul.dropDownContent {display: block;}
+
+  footer {
+    background:#59918A;
+    padding: 20px;
+    display: flex;
+    flex-direction:row;
+  }
+  section {
+    margin:auto;
+    width: 150px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #bfe5d9;
+    border-radius: 20%;
+    font-weight: 800;
+  }
